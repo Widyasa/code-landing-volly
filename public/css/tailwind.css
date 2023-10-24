@@ -17,7 +17,7 @@
         @apply text-font
     }
     .desc{
-        @apply text-white text-[15px] font-medium
+        @apply text-primary text-[15px] font-medium
     }
     .nav-link{
         @apply block py-2 pl-3 pr-4 text-font rounded  hover:bg-gray-50 md:bg-transparent font-medium duration-200 hover:text-primary lg:hover:bg-transparent 
@@ -26,7 +26,7 @@
         @apply text-primary
     }
     .btn-sm{
-        @apply py-3 px-[18px] bg-secondary text-white capitalize rounded-md duration-200 hover:brightness-110
+        @apply px-[15px] py-[9px] hover:brightness-110 duration-200 rounded-[2px] text-[13px]
     }
     .btn{
         @apply py-4 px-5 text-sm rounded-[2px] duration-200 hover:brightness-110
@@ -48,7 +48,7 @@
         @apply lg:py-[px]
     } */
     .banner-section{
-        @apply lg:max-w-[42vw]
+        @apply lg:max-w-[40vw]
     }
     .lg-backdrop.in{
         /* transition-duration:100ms !important; */
@@ -66,16 +66,28 @@
    .card-feature{
     @apply px-5 py-6 card-template flex gap-5 items-center;
    }
-   .card-product{
+   .card-product, .card-blog, .card-testi{
     @apply p-5 card-template
    }
    .arr-swiper-wrapper{
     @apply w-9 h-9 card-template bg-[#F9EEDC] flex justify-center items-center
    }
+   .video-yt{
+    @apply w-full aspect-[3/2] card-template
+   }
+   .swiper-pagination .swiper-pagination-bullet{
+    @apply w-[10] h-[10] bg-primary
+   }
+   .swiper-pagination .swiper-pagination-bullet-active{
+    @apply w-[30px] rounded-full
+   }
+   .bg-cta{
+    @apply bg-[url('../img/bg-cta.svg')] bg-center bg-cover py-28 flex justify-center text-center capitalize flex-col items-center px-4
+   }
 
 
     footer{
-        @apply bg-primary pt-20 pb-14
+        @apply bg-primary pt-20 pb-10
     }
     .input-wrapper{
         @apply bg-white rounded-full p-3
@@ -92,17 +104,17 @@
         @apply pl-3
     }
     footer p, .footer-link{
-        @apply text-[#f7f7f7]
+        @apply text-[#F9EEDC]
     }
     .footer-link{
-        @apply font-normal
+        @apply font-normal text-[#F9EEDC]
     }
     .copyright{
         @apply text-[#F7F7F75C]
     }
     .btn-socmed{
-        @apply w-[42px] h-[42px]  border-[color:var(--White,#F7F7F7)] border-[1.3px] border-solid rounded-full bg-[#F7F7F73D] flex justify-center items-center
-    }
+        @apply w-[42px] h-[42px] duration-200  border-[#F9EEDC] border-[1.3px] border-solid rounded-[2px] flex justify-center items-center hover:bg-[#F9EEDC33] 
+
  }
 
-  
+}
