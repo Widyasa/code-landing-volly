@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .normal-section{
+        @apply grid grid-cols-12 gap-6 items-center
+    }
+    .section-margin-top{
+        @apply mt-32
+    }
+    .section{
+        @apply container mx-auto
+    }
+    p{
+        @apply text-font
+    }
+    .desc{
+        @apply text-white text-[15px] font-medium
+    }
+    .nav-link{
+        @apply block py-2 pl-3 pr-4 text-font rounded  hover:bg-gray-50 md:bg-transparent font-medium duration-200 hover:text-primary lg:hover:bg-transparent 
+    }
+    .nav-link.active{
+        @apply text-primary
+    }
+    .btn-sm{
+        @apply py-3 px-[18px] bg-secondary text-white capitalize rounded-md duration-200 hover:brightness-110
+    }
+    .btn{
+        @apply py-4 px-5 text-sm rounded-[2px] duration-200 hover:brightness-110
+    }
+    .btn-primary{
+        @apply bg-primary text-white capitalize  
+    }
+    .btn-secondary{
+        @apply text-white bg-secondary
+    }
+    .title-font{
+        @apply  font-bebasNeue
+    }
+    .title-section{
+        @apply md:text-5xl lg:text-5xl xl:text-6xl text-4xl font-extrabold text-primary
+    }
+
+    /* .special-section{
+        @apply lg:py-[px]
+    } */
+    .banner-section{
+        @apply lg:max-w-[42vw]
+    }
+    .lg-backdrop.in{
+        /* transition-duration:100ms !important; */
+        opacity: 0.8 !important
+    }
+    .lg-inner{
+        /* transition-duration:100ms !important */
+    }
+    .lg-sub-html {
+        color: black !important;
+    }
+    .card-template{
+        @apply shadow-[2px_2px_0px_0px_#124C66] rounded-[3px] border-2 border-solid border-[#124C66]
+    }
+   .card-feature{
+    @apply px-5 py-6 card-template flex gap-5 items-center;
+   }
+   .card-product{
+    @apply p-5 card-template
+   }
+   .arr-swiper-wrapper{
+    @apply w-9 h-9 card-template bg-[#F9EEDC] flex justify-center items-center
+   }
+
+
+    footer{
+        @apply bg-primary pt-20 pb-14
+    }
+    .input-wrapper{
+        @apply bg-white rounded-full p-3
+    }
+    .btn-footer{
+        @apply py-4 px-9 text-xl font-semibold
+    }
+    .input-text{
+        box-shadow:none !important;
+        outline: none;
+        border:none;
+    }
+    .input-text{
+        @apply pl-3
+    }
+    footer p, .footer-link{
+        @apply text-[#f7f7f7]
+    }
+    .footer-link{
+        @apply font-normal
+    }
+    .copyright{
+        @apply text-[#F7F7F75C]
+    }
+    .btn-socmed{
+        @apply w-[42px] h-[42px]  border-[color:var(--White,#F7F7F7)] border-[1.3px] border-solid rounded-full bg-[#F7F7F73D] flex justify-center items-center
+    }
+ }
+
+  
